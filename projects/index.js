@@ -48,4 +48,6 @@ mySubmit2.onclick = function(){
         resultElement.textContent = `You must be 18+ to enter this site`;
     }
 }
+
+
 //window.alert(`This is an alert!`);

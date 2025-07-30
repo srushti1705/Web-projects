@@ -7,17 +7,38 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Radius of a Circle -->
+
     <h1 id="myH1"> Hello enter the radius of a circle: </h1>
     <label> Radius </label>
     <input type = "text" id = "myText"><br><br>
     <button id = "mySubmit"> Submit </button>
     <h3 id="myH3"></h3>
 
+    <!-- Age Verification -->
+
     <label>Enter your age:</label><br>
     <input type="text" id="myText2"><br>
     <button type="submit" id="mySubmit2">submit</button>
     <p id="resultElement"></p>
-    
+
+    <!-- Checkbox for subcription and payment -->
+
+    <input type="checkbox" id="myCheckbox">
+    <label for="myCheckbox"> Subscribe </label><br>
+
+    <input type="radio" id="visaBtn" name="card">
+    <label for="visaBtn"> Visa </label>
+    <input type="radio" id="mastercardBtn" name="card">
+    <label for="mastercardBtn"> Master Card </label>
+    <input type="radio" id="paypalBtn" name="card">
+    <label for="paypalBtn"> PayPal </label>
+
+    <button type="submit" id="mySubmit3"> Submit </button>
+
+    <p id="subResult"></p>
+    <p id="paymentResult"></p>
+
     <script src="index.js"></script>
 </body>
 </html>
