@@ -49,5 +49,35 @@ mySubmit2.onclick = function(){
     }
 }
 
+const myCheckbox = document.getElementById("myCheckbox");
+const visaBtn = document.getElementById("visaBtn");
+const mastercardBtn = document.getElementById("mastercardBtn");
+const paypalBtn = document.getElementById("paypalBtn");
+const mySubmit3 = document.getElementById("mySubmit3");
+const subResult = document.getElementById("subResult");
+const paymentResult = document.getElementById("paymentResult");
 
+mySubmit3.onclick = function() {
+    if(myCheckbox.checked) {
+        subResult.textContent = `You are subscribed!`;
+    }
+    else {
+        subResult.textContent = `You are not subscribed!`;
+    }
+
+    if(visaBtn.checked) {
+        paymentResult.textContent = `You are paying with Visa`;
+    }
+    else if(mastercardBtn.checked) {
+        paymentResult.textContent = `You are paying with Master Card`;
+
+    }
+    else if(paypalBtn.checked) {
+        paymentResult.textContent = `You are paying with Paypal`;
+
+    }
+    else {
+        paymentResult.textContent = `Select a payment method!`;
+    }
+}
 //window.alert(`This is an alert!`);
