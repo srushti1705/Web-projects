@@ -80,4 +80,9 @@ mySubmit3.onclick = function() {
         paymentResult.textContent = `Select a payment method!`;
     }
 }
-//window.alert(`This is an alert!`);
+
+/*window.alert(`This is an alert!`);
+
+let purchaseAmount = 125;
+let discount = purchaseAmount >= 100 ? 10 : 0;
+console.log(`Your total is $${purchaseAmount - purchaseAmount * (discount/100)}`); */
