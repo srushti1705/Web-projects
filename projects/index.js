@@ -111,3 +111,22 @@ switch(true) {
 }
 console.log(letterGrade);
 */
+
+/*
+let username = "Srushti ";
+
+console.log(username.charAt(1));
+console.log(username.indexOf("s"));
+console.log(username.lastIndexOf("s"));
+console.log(username.length);
+console.log(username.trim());
+console.log(username.toUpperCase());
+console.log(username.toLowerCase());
+console.log(username.repeat(3));
+console.log(username.startsWith(" "));
+console.log(username.endsWith(" "));
+console.log(username.includes(" "));
+console.log(username.replaceAll("s", "p"));
+console.log(username.padStart(10, "s"));
+console.log(username.padEnd(10, "s"));
+*/
