@@ -81,8 +81,9 @@ mySubmit3.onclick = function() {
     }
 }
 
-/*window.alert(`This is an alert!`);
+//window.alert(`This is an alert!`);
 
+//switch statement
 let purchaseAmount = 125;
 let discount = purchaseAmount >= 100 ? 10 : 0;
 console.log(`Your total is $${purchaseAmount - purchaseAmount * (discount/100)}`);
@@ -110,9 +111,9 @@ switch(true) {
         letterGrade = "F";   
 }
 console.log(letterGrade);
-*/
 
-/*
+//string methods
+
 let username = "Srushti ";
 
 console.log(username.charAt(1));
@@ -129,4 +130,9 @@ console.log(username.includes(" "));
 console.log(username.replaceAll("s", "p"));
 console.log(username.padStart(10, "s"));
 console.log(username.padEnd(10, "s"));
-*/
+
+//method chaining
+
+let userName = window.prompt("Enter your userName: ");
+userName = userName.trim().charAt(0).toUpperCase() + userName.trim().slice(1).toLowerCase();
+console.log(userName);
