@@ -136,3 +136,21 @@ console.log(username.padEnd(10, "s"));
 let userName = window.prompt("Enter your userName: ");
 userName = userName.trim().charAt(0).toUpperCase() + userName.trim().slice(1).toLowerCase();
 console.log(userName);
+
+//while loop
+let loggedIn = false;
+let username2;
+let password;
+
+while(!loggedIn){
+    username2 = window.prompt(`Enter your username`);
+    password = window.prompt(`Enter your password`);
+
+    if(username2 === "myUsername" && password === "myPassword"){
+        loggedIn = true;
+        console.log("You are logged in!");
+    }
+    else{
+        console.log("Invalid credentials! Please try again");
+    }
+}
