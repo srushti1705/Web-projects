@@ -131,13 +131,14 @@ console.log(username.replaceAll("s", "p"));
 console.log(username.padStart(10, "s"));
 console.log(username.padEnd(10, "s"));
 
-//method chaining
+/*method chaining
 
 let userName = window.prompt("Enter your userName: ");
 userName = userName.trim().charAt(0).toUpperCase() + userName.trim().slice(1).toLowerCase();
 console.log(userName);
 
-//while loop
+while loop
+
 let loggedIn = false;
 let username2;
 let password;
@@ -153,4 +154,14 @@ while(!loggedIn){
     else{
         console.log("Invalid credentials! Please try again");
     }
-}
+}*/
+
+//for loop 
+for(let i = 1; i <= 10; i++){
+    if(i == 13) {
+        continue;
+    }
+    else {
+        console.log(i);
+    }
+} 
