@@ -176,3 +176,15 @@ function happyBirthday(username, age){
 }
 
 console.log(happyBirthday("Bro", 20));
+
+function isEven(number){
+
+    return number % 2 === 0 ? true : false;
+}
+console.log(isEven(13)); 
+
+function isValidEmail(email){
+
+    return email.includes("@") ? true : false;
+}
+console.log(isValidEmail("Bro@fake.com"));
