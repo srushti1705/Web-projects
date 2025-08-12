@@ -165,3 +165,14 @@ for(let i = 1; i <= 10; i++){
         console.log(i);
     }
 } 
+
+//functions
+function happyBirthday(username, age){
+    console.log(`Happy birthday to you!`);
+    console.log(`Happy birthday to you!`);
+    console.log(`Happy birthday dear, ${username}`);
+    console.log(`Happy birthday to you!`);
+    console.log(`You are ${age} years old!`);
+}
+
+console.log(happyBirthday("Bro", 20));
