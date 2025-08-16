@@ -188,3 +188,19 @@ function isValidEmail(email){
     return email.includes("@") ? true : false;
 }
 console.log(isValidEmail("Bro@fake.com"));
+
+//variable scope
+
+let x = 3; // global scope
+
+function1();
+
+function function1(){
+    let x = 1; // local scope
+    console.log(x);
+}
+
+function function2(){
+    let x = 2; // local scope
+    console.log(x);
+}
