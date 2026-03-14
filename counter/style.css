@@ -21,4 +21,26 @@
 
 .buttons:hover {
     background-color:  hsl(214, 100%, 52%);
+}  
+
+.counter-heading {
+  font-size: 50px;
+  font-family: "Roboto";
+  font-weight: 800;
+  text-align: center;
+} 
+
+.bg-container {
+  height: 100vh;
+  background-color: #f1f5f8;
+}
+.counter-heading {
+  font-size: 50px;
+  font-family: "Roboto";
+  font-weight: 800;
+}
+ 
+.counter-value {
+  font-size: 75px;
+  font-weight: 900;
 }
