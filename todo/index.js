@@ -1,4 +1,5 @@
 let todoItemsContainer = document.getElementById("todoItemsContainer");
+let saveTodoButton = document.getElementById("saveTodoButton");
 
 let todoList = [
     {
@@ -14,6 +15,10 @@ let todoList = [
         uniqueNo: 3
     }
 ];
+
+saveTodoButton.onclick = function() {
+    localStorage.setItem("todoList", JSON.stringify(todoList));
+};
 
 let toDoCount = todoList.length;
 
