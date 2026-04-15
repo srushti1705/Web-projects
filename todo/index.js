@@ -1,24 +1,21 @@
 let todoItemsContainer = document.getElementById("todoItemsContainer");
 let saveTodoButton = document.getElementById("saveTodoButton");
 
-let todoList = [
-    {
-        text: "Learn HTML",
-        uniqueNo: 1
-    },
-    {
-        text: "Learn CSS",
-        uniqueNo: 2
-    },
-    {
-        text: "Learn JavaScript",
-        uniqueNo: 3
-    }
-];
-
 saveTodoButton.onclick = function() {
     localStorage.setItem("todoList", JSON.stringify(todoList));
 };
+
+todoList = getTodoListFromLocalStorage();
+
+function getTodoListFromLocalStorage() {
+    let stringifiedTodoList = localStorage.getItem("todoList");
+    let parsedTodoList = JSON.parse(stringifiedTodoList);
+    if (parsedTodoList === null) {
+        return [];
+    } else {
+        return parsedTodoList;
+    }
+}
 
 let toDoCount = todoList.length;
 
