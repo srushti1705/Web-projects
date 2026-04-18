@@ -28,6 +28,15 @@ function onToDoStatusChange(checkboxId, labelId) {
 function onDeleteToDo(deleteIconContainer, todoId) {
     let todoElement = document.getElementById(todoId);
     todoItemsContainer.removeChild(todoElement);
+    let deleteTodoItemIndex = todoList.findIndex(function(eachTodo) {
+        let eachTodoId = "todo" + eachTodo.uniqueNo;
+        if (eachTodoId === todoId) {
+            return true;
+        } else {
+            return false;
+        }
+    })
+    todoList.splice(deleteTodoItemIndex, 1);
 }
 
 function createAndAppendTodo(todo) {
