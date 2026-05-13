@@ -25,6 +25,20 @@
                 <input type="text" class="w-full px-3 py-3 mt-3 border border-gray-300 rounded" id="email" />
                 <p id="emailErrorMsg" class="text-[#dc3545] font-roboto text-sm mt-1"></p>
             </div>
+            <div class="mb-6">
+                <label for="status"> Working Status: </label>
+                <select id="status" class="w-full px-3 py-3 mt-3 border border-gray-300 rounded">
+                    <option value="active"> Active </option>
+                    <option value="inactive" selected> Inactive </option>
+                </select>
+            </div>
+            <div class="mb-6">
+                <p class="text-gray-900 text-lg mb-2"> Gender: </p>
+                <input type="radio" id="genderMale" value="Male" name="gender" checked/>
+                <label for="genderMale" class="ml-2 text-gray-700"> Male </label>
+                <input type="radio" id="genderFemale" value="Female" name="gender" class="ml-2"/>
+                <label for="genderFemale" class="ml-2 text-gray-700"> Female </label>
+            </div>
             <button type="submit" class="bg-blue-600 text-white px-4 py-3 rounded-md hover:bg-blue-700"> Submit </button>
         </form>
     </div>
